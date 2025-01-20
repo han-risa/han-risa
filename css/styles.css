@@ -92,6 +92,32 @@
   }
 }
 
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(10%);
+    opacity: 0.5;
+  }
+
+  80% {
+    transform: translateY(-5%);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-top {
+  animation: slideInFromTop 1.5s ease-out forwards;
+}
+
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
